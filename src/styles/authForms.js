@@ -58,3 +58,19 @@ export const Button = styled.button`
         transform: scale(0.95);
     }
 `;
+
+export const Span = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+`;
+
+export const Redirect = styled.p`
+    color: #888888;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+`;
