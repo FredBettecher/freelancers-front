@@ -1,6 +1,6 @@
 import { Container, Title, Form, Paragraph, Input, Button } from "@/styles/authForms";
 
-export default function SingUpForm() {
+function SingUp() {
     return(
         <Container>
             <Title>Cadastre-se</Title>
@@ -17,8 +17,9 @@ export default function SingUpForm() {
     );
 }
 
-export default function LoginForm() {
-    <Container>
+function Login() {
+    return(
+        <Container>
         <Title>Conecte-se</Title>
         <Form>
             <Paragraph>E-mail</Paragraph>
@@ -28,4 +29,12 @@ export default function LoginForm() {
             <Button type='submit'>Entrar</Button>
         </Form>
     </Container>
+    );
 }
+
+const authForms = {
+    SingUp,
+    Login,
+};
+
+export default authForms;
