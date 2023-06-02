@@ -1,4 +1,5 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
+import Link from 'next/link';
 
 export const Container = styled.div`
     display: flex;
@@ -67,7 +68,7 @@ export const Span = styled.span`
     margin: 1rem 0;
 `;
 
-export const Redirect = styled.p`
+export const Redirect = styled(Link)`
     color: #888888;
     font-size: 1.4rem;
     font-weight: bold;
