@@ -11,7 +11,6 @@ export const Body = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 1.5rem 0;
     background-color: #fff;

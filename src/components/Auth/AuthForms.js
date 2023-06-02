@@ -1,4 +1,4 @@
-import { Container, Title, Form, Paragraph, Input, Button } from "@/styles/authForms";
+import { Container, Title, Form, Paragraph, Input, Button, Redirect, Span } from "@/styles/authForms";
 
 function SingUp() {
     return(
@@ -12,6 +12,7 @@ function SingUp() {
                 <Paragraph>Confirme a senha</Paragraph>
                 <Input type='password' name='repeat-password'/>
                 <Button type='submit'>Cadastrar</Button>
+                <Span><Redirect>Já possui uma conta? Conecte-se!</Redirect></Span>
             </Form>
         </Container>
     );
@@ -26,7 +27,8 @@ function Login() {
             <Input type='email' name='email' />
             <Paragraph>Senha</Paragraph>
             <Input type='password' name='password'/>
-            <Button type='submit'>Entrar</Button>
+            <Button type='submit'>Cadastrar</Button>
+            <Span><Redirect>Ainda não possui uma conta? Cadastre-se!</Redirect></Span>
         </Form>
     </Container>
     );
