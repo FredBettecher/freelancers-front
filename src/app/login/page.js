@@ -1,16 +1,15 @@
 'use client';
 
-import AuthHeader from '@/components/Auth/AuthHeader';
+import authForms from "@/components/Auth/AuthForms";
+import AuthHeader from "@/components/Auth/AuthHeader";
 import { Body, Container } from '@/styles/signUp';
-import authForms from '@/components/Auth/AuthForms';
 
-
-export default function SignUp() {
+export default function Login() {
     return(
         <Body>
             <AuthHeader />
             <Container>
-                <authForms.SingUp />
+                <authForms.Login />
             </Container>
         </Body>
     );
