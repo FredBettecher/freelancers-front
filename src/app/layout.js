@@ -1,8 +1,8 @@
 // These styles apply to every route in the application
-import StyledComponentsRegistry from './lib/registry';
 import './globals.css';
 import { Roboto } from 'next/font/google'
- 
+import Providers from './providers';
+
 export const metadata = {
   title: 'Free Lancers',
   description: '',
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body className={roboto.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          <Providers>{children}</Providers>
       </body>
     </html>
   );
