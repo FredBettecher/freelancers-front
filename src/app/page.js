@@ -1,5 +1,12 @@
+'use client';
+
+import { Body } from '@/assets/styles/home-styles/homeContainers';
+import HomeHeader from '@/components/Home/HomeHeader';
+
 export default function Home() {
     return(
-        <h1>Hello World!</h1>
+        <Body>
+            <HomeHeader />
+        </Body>
     );
 }

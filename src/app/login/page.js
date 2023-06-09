@@ -2,7 +2,7 @@
 
 import AuthHeader from "@/components/Auth/AuthHeader";
 import LoginForm from "@/components/Auth/LoginForm";
-import { Body, Container } from '@/assets/styles/authContainers';
+import { Body, Container } from '@/assets/styles/auth-styles/authContainers';
 
 export default function LoginPage() {
     return(
