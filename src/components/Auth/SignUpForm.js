@@ -1,7 +1,7 @@
 'use client';
 
 import { UserContext } from '@/app/contexts/userContext';
-import { Container, Title, Form, Paragraph, Input, Button, Redirect, Span } from '@/assets/styles/authForms';
+import { Container, Title, Form, Paragraph, Input, Button, Redirect, Span } from '@/assets/styles/auth-styles/authForms';
 import { login, signUp } from '@/services/auth';
 import { useRouter } from 'next/navigation';
 import { useState, useContext } from 'react';
