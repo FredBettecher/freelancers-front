@@ -9,7 +9,7 @@ import { UserContext } from '@/app/contexts/userContext';
 export default function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { token, setToken } = useContext(UserContext);
+    const { setToken } = useContext(UserContext);
     const router = useRouter();
 
     function handleLogin(e) {
