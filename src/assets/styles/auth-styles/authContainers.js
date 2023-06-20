@@ -14,8 +14,8 @@ export const Container = styled.div`
     justify-content: center;
     margin: 1.5rem 0;
     background-color: #fff;
-    width: 45rem;
-    height: 51rem;
+    width: 33.75rem;
+    height: 38.25rem;
     border: 0.0625rem solid #FFFFFF;
     border-radius: 0.625rem;
 `;

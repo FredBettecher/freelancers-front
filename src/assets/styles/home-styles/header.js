@@ -15,7 +15,7 @@ export const AuthContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 18rem;
+    width: 13.5rem;
 `;
 
 export const Container = styled.div`
@@ -25,13 +25,13 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    height: 2.5rem;
-    width: 9rem;
+    height: 1.875rem;
+    width: 6.75rem;
     background-color: #FF8200;
     border: transparent;
     border-radius: 0.625rem;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 0.875rem;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
@@ -43,15 +43,15 @@ export const Button = styled.button`
 
 export const Label = styled(Link)`
     color: #007DFF;
-    font-size: 1.2rem;
+    font-size: 0.875rem;
     font-weight: bold;
 `;
 
 export const Searchbar = styled.input`
-    width: 25rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    margin: 0 15rem 0 5rem;
+    width: 22rem;
+    height: 1.875rem;
+    font-size: 0.875rem;
+    margin: 0 12rem 0 5rem;
     padding-left: 0.625rem;
     border: solid 0.0625rem #888888;
     border-radius: 0.3125rem;

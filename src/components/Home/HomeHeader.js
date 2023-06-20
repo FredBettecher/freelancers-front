@@ -16,7 +16,7 @@ export default function HomeHeader(){
                 <Label href='/#'>Categorias</Label>
                 <Searchbar type='text' placeholder='Qual serviço ou freelancer você está procurando?' />
                 <Link href='/'>
-                    <Image src={logo} alt='logo' height={50} />
+                    <Image src={logo} alt='logo' height={37.5} />
                 </Link>
             </Container>
         </Header>

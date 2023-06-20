@@ -10,49 +10,49 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     color: #007DFF;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 `;
 
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 30rem;
+    width: 22.5rem;
     height: auto;
-    margin-top: 2rem;
-    margin-left: 4.5rem;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
 `;
 
 export const Paragraph = styled.p`
     color: #007DFF;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 `;
 
 export const Input = styled.input`
     width: 100%;
-    height: 3rem;
+    height: 2.25rem;
     border: 0.0625rem solid #888888;
     border-radius: 0.3125rem;
     font-size: 1rem;
     padding-left: 0.625rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 `;
 
 export const Button = styled.button`
-    font-size: 1.7rem;
+    font-size: 1.125rem;
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
     background-color: #FF8200;
     border-radius: 0.625rem;
     border: none;
-    width: 12rem;
-    height: 4rem;
-    margin: 0.5rem 0 0.5rem 9rem;
+    width: 9rem;
+    height: 3rem;
+    margin: 0.5rem 0 0.5rem 6.75rem;
     cursor: pointer;
     
     &:active {
@@ -70,7 +70,7 @@ export const Span = styled.span`
 
 export const Redirect = styled(Link)`
     color: #888888;
-    font-size: 1.4rem;
+    font-size: 1.125rem;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
