@@ -1,16 +1,14 @@
 'use client';
 
-import { UserContext } from '@/app/contexts/userContext';
 import { Container, Title, Form, Paragraph, Input, Button, Redirect, Span } from '@/assets/styles/auth-styles/authForms';
-import { login, signUp } from '@/services/auth';
+import { signUp } from '@/services/auth';
 import { useRouter } from 'next/navigation';
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 
 export default function SingUpForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const { token, setToken } = useContext(UserContext);
     const router = useRouter();
 
     function handleSignup(e) {
@@ -30,11 +28,13 @@ export default function SingUpForm() {
                 if(res.statusText === "Conflict") {
                     return alert('E-mail já em uso');
                 }
-                setToken(res.data.token);
-                login(email, password).then(router.push('/'));
+                if(res.statusText === "Created") {
+                    alert("Cadastrado realizado com sucesso!")
+                    router.push('/login');
+                }
             })
             .catch(error => {
-                alert(error.data.message);
+                alert(error.statusText);
             });
     }
 
