@@ -1,7 +1,7 @@
 'use client';
 
-import { Container, Title, Form, Paragraph, Input, Button, Redirect, Span } from '@/assets/styles/auth-styles/authForms';
-import { signUp } from '@/services/auth';
+import { Container, Title, Form, Paragraph, Input, Button, Redirect, Span } from '../../assets/styles/auth-styles/authForms';
+import { signUp } from '../../services/auth';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 

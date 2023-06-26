@@ -1,4 +1,4 @@
-import api from '@/app/api/api';
+import api from '../app/api/api';
 
 export function signUp(email, password, confirmPassword) {
     const response = api.post('/auth/sign-up', { email, password, confirmPassword })

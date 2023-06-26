@@ -1,27 +1,27 @@
-import { Button, UserContainer, NavContainer, Header, Label, Searchbar, UserImage, Chat, Contacts, Notifications } from '@/assets/styles/home-styles/header';
+import { Button, UserContainer, NavContainer, Header, Label, Searchbar, UserImage, Chat, Contacts, Notifications } from '../../assets/styles/home-styles/header';
 import Image from 'next/image';
-import logo from '@/assets/images/logo1.png';
+import logo from '../../assets/images/logo1.png';
 import Link from 'next/link';
-import userIcon from '@/assets/images/user-icon.png'
-import { useContext, useState } from 'react';
-import { UserContext } from '@/app/contexts/userContext';
+import userIcon from '../../assets/images/user-icon.png'
+import { useContext } from 'react';
+import { UserContext } from '../../app/contexts/userContext';
 
 
 export default function HomeHeader(){
-    const {token} = useContext(UserContext);
+    const { token } = useContext(UserContext);
     const isUserOnline = token.length !== 0 ? true:false;
 
     return(
         <Header>
             <UserContainer>
                 {isUserOnline ? (
-                    UserOnline()
+                    UserLogged()
                 ) : (
-                    UserOffline()
+                    UserUnlogged()
                 )}
             </UserContainer>
             <NavContainer>
-                <Label href='/#'>Categorias</Label>
+                <Label href='/categories'>Categorias</Label>
                 <Searchbar type='text' placeholder='Qual serviço ou freelancer você está procurando?' />
                 <Link href='/'>
                     <Image src={logo} alt='logo' height={37.5} />
@@ -31,7 +31,7 @@ export default function HomeHeader(){
     );
 }
 
-function UserOnline() {
+function UserLogged() {
     return(
         <>
             <UserImage src={userIcon}/>
@@ -45,7 +45,7 @@ function UserOnline() {
     );
 }
 
-function UserOffline() {
+function UserUnlogged() {
     return(
         <>
             <Link href='/sign-up'>

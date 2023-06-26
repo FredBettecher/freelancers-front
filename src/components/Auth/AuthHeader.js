@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import Image from 'next/image';
-import logo from '@/assets/images/logo2.png';
+import logo from '../../assets/images/logo2.png';
 import Link from 'next/link';
 
 export default function AuthHeader() {
